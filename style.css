@@ -1,7 +1,6 @@
 body {
   margin: 0;
   width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
 }
 .pageContainer {
@@ -44,12 +43,13 @@ body {
 }
 .main {
   grid-area: main;
+  margin: 2vh 0;
 }
 .footer {
   grid-area: footer;
   display: flex;
   flex-direction: column;
-  background-color: #333333e8;
+  background-color: #333333;
 }
 .mySocial {
   display: flex;

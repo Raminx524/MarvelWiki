@@ -1,0 +1,32 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vh;
+}
+.main iframe {
+  width: 30%;
+}
+.marvelIntro {
+  display: flex;
+  justify-content: center;
+}
+.trailers {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 1vh;
+}
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main iframe {
+    width: 80%;
+  }
+}
