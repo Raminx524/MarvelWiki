@@ -6,9 +6,9 @@ body {
 }
 .pageContainer {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   display: grid;
-  grid-template-rows: 10% 83% 7%;
+  grid-template-rows: 20% 70% 10%;
   grid-template-areas:
     "header header header"
     "main main main"
