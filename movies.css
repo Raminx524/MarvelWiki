@@ -1,9 +1,20 @@
 .pageContainer {
   display: flex;
   flex-direction: column;
-  row-gap: 1vh;
+}
+.header {
+  padding-bottom: 1vh;
 }
 .main {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+}
+h1 {
+  color: #fff;
+  align-self: center;
+}
+.movieDetails-Container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -15,6 +26,8 @@
   flex-direction: column;
   align-items: center;
   row-gap: 1vh;
+  color: #fff;
+  font-weight: bold;
 }
 .movieDetails img {
   width: 10vw;
@@ -23,8 +36,21 @@
   .main {
     flex-direction: column;
     align-items: center;
+    background-color: #f00;
+  }
+  .movieDetails-Container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .movieDetails img {
     width: 25vw;
+  }
+}
+@media screen and (min-width: 601px) {
+  .main {
+    background-image: url(assets/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

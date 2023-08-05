@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-shadow: 2px 1px #000;
+}
+@media screen and (max-width: 600px) {
+  .main h2 {
+    font-size: 3vw;
+  }
+}

@@ -1,13 +1,19 @@
 .pageContainer {
   display: flex;
   flex-direction: column;
-  row-gap: 1vh;
+}
+.header {
+  padding-bottom: 1vh;
 }
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1vh;
+  padding: 2vh 2vw;
+}
+h1 {
+  color: #fff;
 }
 .main iframe {
   width: 30%;
@@ -26,8 +32,16 @@
   .main {
     flex-direction: column;
     align-items: center;
+    background-color: #f00;
   }
   .main iframe {
     width: 80%;
+  }
+}
+@media screen and (min-width: 601px) {
+  .main {
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
