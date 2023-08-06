@@ -8,8 +8,40 @@
   color: #ffffff;
   text-shadow: 2px 1px #000;
 }
+.carousel-container {
+  width: 60vw;
+  overflow-x: hidden;
+}
+#carousel {
+  display: flex;
+  flex-direction: row;
+}
+#carousel img {
+  width: 20vw;
+}
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+#carousel {
+  animation-name: carousel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 @media screen and (max-width: 600px) {
   .main h2 {
     font-size: 3vw;
+  }
+  .carousel-container {
+    position: relative;
+    top: 15vh;
   }
 }
