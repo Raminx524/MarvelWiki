@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #000;
-  font-size: 2vw;
 }
 .siteLogo {
   display: flex;
@@ -49,9 +48,14 @@ body {
   grid-area: footer;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: #333333;
   color: #fff;
+  font-size: 3vw;
+}
+.footer h2{
+  margin: 0;
 }
 .mySocial {
   width: 50%;
@@ -61,4 +65,9 @@ body {
 .mySocial img {
   height: 2vh;
   border-radius: 50%;
+}
+@media screen and (max-width:600px) {
+  .header{
+  font-size: 2vw;
+  }
 }
