@@ -5,6 +5,9 @@
 .header {
   padding-bottom: 1vh;
 }
+.footer{
+  height: 10vh;
+}
 .main {
   display: flex;
   flex-direction: column;
